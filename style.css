@@ -43,10 +43,10 @@ body {
   padding: 0;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button{
-  outline:none;
+  outline: none;
 }
 button {
   background: none;
@@ -122,12 +122,12 @@ li > * {
 .input-text {
   width: 226px
 }
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -140,15 +140,15 @@ button.delete img:hover {
 /* Edit Task */
 #incompleted-tasks li .input-text,
 #completed-tasks li .input-text {
-  display:none
+  display: none
 }
 
 #incompleted-tasks li.edit-mode .input-text,
 #completed-tasks li.edit-mode .input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 ul li.edit-mode .label-task {
-  display:none;
+  display: none;
 }
