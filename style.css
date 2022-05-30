@@ -4,22 +4,22 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.header-container {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.header-container img {
+.header__image {
   width: 100%;
 }
-.header-container .matrix-info {
+.header .header__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .header-container {
+  .header {
     text-align: center;
   }
   
@@ -34,7 +34,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.task-item {
+.added-task__task-item {
   display: flex;
 }
 #incompleted-tasks,
