@@ -64,7 +64,7 @@ button:hover {
 }
 /* Heading */
 h3,
-#added-tasks label {
+.added-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -89,7 +89,7 @@ h3,
   color: #333;
 }
 /* New Task */
-#added-tasks label {
+.added-task__label {
   display: block;
   margin: 0 0 20px;
 }
