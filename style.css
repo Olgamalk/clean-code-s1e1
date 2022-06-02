@@ -17,13 +17,14 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header {
     text-align: center;
   }
   
 }
+
 .main-container {
   display: block;
   width: 500px;
@@ -42,15 +43,17 @@ body {
   margin: 0;
   padding: 0;
 }
-li, 
-h3 {
+#incompleted-tasks li,
+#completed-tasks li {
   list-style: none;
 }
 input,
-button {
+.button {
   outline: none;
 }
-button {
+.button,
+.delete,
+.edit {
   background: none;
   border: 0px;
   color: #888;
@@ -59,12 +62,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
-/* Heading */
-h3,
-#added-tasks label {
+.header-title,
+.added-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,16 +90,13 @@ h3,
 .input-text:focus {
   color: #333;
 }
-/* New Task */
-#added-tasks label {
+.added-task__label {
   display: block;
   margin: 0 0 20px;
 }
 #new-task {
   width: 318px;
 }
-
-/* Task list */
 #incompleted-tasks li,
 #completed-tasks li {
   overflow: hidden;
@@ -107,14 +106,9 @@ h3,
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
-}
-
 .input-checkbox {
   margin: 0 10px;
 }
-
 .label-task {
   padding-left: 10px;
   box-sizing: border-box;
@@ -132,25 +126,20 @@ li > * {
 .delete img:hover {
   transform: rotateZ(0);
 }
-
-/* Completed */
 #completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
-
-/* Edit Task */
 #incompleted-tasks li .input-text,
 #completed-tasks li .input-text {
   display: none;
 }
-
 #incompleted-tasks li.edit-mode .input-text,
 #completed-tasks li.edit-mode .input-text {
   display: inline-block;
   width: 224px;
 }
-
-ul li.edit-mode .label-task {
+#incompleted-tasks li.edit-mode .label-task,
+#completed-tasks li.edit-mode .label-task {
   display: none;
 }

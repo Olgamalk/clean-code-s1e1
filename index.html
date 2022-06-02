@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head><title>Todo App</title>
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="header">
@@ -11,37 +12,37 @@
     </header>
     <main class="main-container">
       <section id="added-tasks" class="added-task">
-        <label for="new-task" class="added-task__label">Add Item</label>
-        <p class="added-task__task-item">
+        <h3 class="added-task__label header-title">Add Item</h3>
+        <div class="added-task__task-item">
           <input id="new-task" class="added-task__input task input-text" type="text">
-          <button class="added-task__button">Add</button>
-        </p>
+          <button class="added-task__button button">Add</button>
+        </div>
       </section>
       <section class="incompleted-task">
-        <h3 class="incompleted-task__header">Todo</h3>
+        <h3 class="incompleted-task__header header-title">Todo</h3>
         <ul id="incompleted-tasks" class="incompleted-task__list">
           <li class="incompleted-task__item edit-mode">
             <input type="checkbox" class="incompleted-task__input-checkbox input-checkbox"><label class="incompleted-task__label task label-task">Pay Bills</label>
             <input type="text" value="Pay Bills" class="incompleted-task__input-text task input-text">
-            <button class="incompleted-task__button-edit edit-button">Save</button>
-            <button class="incompleted-task__button-delete delete"><img src="./remove.svg" alt="Delete task"></button>
+            <button class="incompleted-task__button-edit edit button">Save</button>
+            <button class="incompleted-task__button-delete delete button"><img src="./remove.svg" alt="Delete task"></button>
           </li>
           <li>
             <input type="checkbox" class="incompleted-task__input-checkbox input-checkbox"><label class="incompleted-task__label task label-task">Go Shopping</label>
             <input type="text" class="incompleted-task__input-text task input-text">
-            <button class="incomplited-task__button-edit edit-button">Edit</button>
-            <button class="incompleted-task__button-delete delete"><img src="./remove.svg" alt="Delete task"></button>
+            <button class="incomplited-task__button-edit edit button">Edit</button>
+            <button class="incompleted-task__button-delete delete button"><img src="./remove.svg" alt="Delete task"></button>
           </li>
         </ul>
       </section>
       <section>
-        <h3 class="completed-task__header">Completed</h3>
+        <h3 class="completed-task__header header-title">Completed</h3>
         <ul id="completed-tasks" class="completed-task__list">
           <li class="completed-task__item">
             <input type="checkbox" class="completed-task__input-checkbox input-checkbox" checked><label class="completed-task__label task label-task">See the Doctor</label>
             <input type="text" class="completed-task__input-text task input-text">
-            <button class="completed-task__button-edit edit-button">Edit</button>
-            <button class="completed-task__button-delete delete"><img src="./remove.svg" alt="Delete task"></button>
+            <button class="completed-task__button-edit edit button">Edit</button>
+            <button class="completed-task__button-delete delete button"><img src="./remove.svg" alt="Delete task"></button>
           </li>
         </ul>
       </section>
